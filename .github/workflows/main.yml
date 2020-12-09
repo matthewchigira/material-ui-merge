@@ -1,0 +1,24 @@
+name: deploy-uxpin
+
+on: push
+
+jobs:
+  deploy:
+    name: Update UXPin Merge
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@master
+      
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      
+      - name: Install
+        run: yarn
+      
+      - name: Push To UXpin
+        run: yarn push
+        env:
+          UXPIN_AUTH_TOKEN: ${{ secrets.UXPIN_AUTH_TOKEN }}
