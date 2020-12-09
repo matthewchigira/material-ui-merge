@@ -22,3 +22,4 @@ jobs:
         run: yarn push
         env:
           UXPIN_AUTH_TOKEN: ${{ secrets.UXPIN_AUTH_TOKEN }}
+          UXPIN_API_DOMAIN: ${{ secrets.UXPIN_API_DOMAIN }}
