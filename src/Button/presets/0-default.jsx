@@ -4,7 +4,7 @@ import Button from "../Button";
 export default (
   <Button
     uxpId="action1"
-    size="medium"
+    size="small"
     variant="outlined"
     color="primary"
     fullWidth>
