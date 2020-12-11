@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "uxpin-merge push --disable-tunneling --uxpin-domain uxpinstage.com",
+    "push": "uxpin-merge push --disable-tunneling --uxpin-domain uxpinstage.com --branch $GITHUB_REF",
     "start": "uxpin-merge --disable-tunneling"
   },
   "author": "",
