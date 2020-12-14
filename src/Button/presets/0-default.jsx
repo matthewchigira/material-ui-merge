@@ -5,9 +5,9 @@ export default (
   <Button
     uxpId="action1"
     size="small"
-    variant="outlined"
-    color="primary"
+    variant="contained"
+    color="secondary"
     fullWidth>
-    Sign Up
+    Bugfix/Branch v1 (unedited)
   </Button>
 );
